@@ -36,6 +36,8 @@ export const nodeOrientation = writable('vertical');
 export const hasEdgeLabel = writable(false);
 export const edgeLabel = writable('');
 
+export const nodetype = writable('default')
+
 
 if (browser) {
 	nodesState.subscribe((value) => {

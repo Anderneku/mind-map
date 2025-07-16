@@ -9,7 +9,7 @@
 	--xy-theme-color-focus: #e8e8e8;
 
 	/* Built-in Variables see https://svelteflow.dev/learn/customization/theming */
-	--xy-node-border-default: 1px solid #ededed;
+	--xy-node-border-default: 1px solid #1b1a34;
 
 	--xy-node-boxshadow-default:
 		0px 3.54px 4.55px 0px #00000005, 0px 3.54px 4.55px 0px #0000000d,
@@ -20,7 +20,7 @@
 	--xy-handle-background-color-default: #ffffff;
 	--xy-handle-border-color-default: #aaaaaa;
 
-	--xy-edge-label-color-default: #505050;
+	--xy-edge-label-color-default: #1b1a34;
 
 	--xy-resize-background-color-default: #9e86ed;
 }
@@ -79,9 +79,15 @@
 .svelte-flow__edge.selectable.selected .svelte-flow__edge-path {
 	stroke: var(--xy-theme-edge-hover);
 }
+.svelte-flow__edge-path{
+  stroke: #928eff;
+}
 
 .svelte-flow__handle {
-	background-color: var(--xy-handle-background-color-default);
+	background-color: #1b1a34;
+	border: 2px solid white;
+	width: 10px;
+	height: 10px;
 }
 
 .svelte-flow__handle.connectionindicator:hover {
@@ -109,9 +115,10 @@
 
 .svelte-flow__edge-label {
 	background: #f7f9fb;
-	
 }
-
+.svelte-flow__edge-label.dark{
+  background: #111417;
+}
 /* 
   Custom Example CSS  - This CSS is to improve the example experience.
   You can remove it if you want to use the default styles.
