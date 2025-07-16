@@ -32,6 +32,7 @@
 	"dependencies": {
 		"@lucide/svelte": "^0.525.0",
 		"@xyflow/svelte": "^1.2.2",
-		"daisyui": "^5.0.46"
+		"daisyui": "^5.0.46",
+		"perfect-freehand": "^1.2.2"
 	}
 }
