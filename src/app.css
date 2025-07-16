@@ -1,0 +1,16 @@
+@import url('xy-theme.css');
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+html,
+body {
+	margin: 0;
+	font-family: monospace;
+}
+
+#app {
+	width: 100vw;
+	height: 100vh;
+}
